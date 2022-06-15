@@ -61,5 +61,3 @@ def contact():
             flash("Form entered successfully. Well done sindey!")
             return redirect(url_for('contact', template_form = form))
     return render_template('contact.html', template_form = form, title='contact')
-
-db.create_all()
