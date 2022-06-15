@@ -1,0 +1,64 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #faf3e6;
+  }
+
+h1 {
+    color: red;
+}
+
+/* p {
+    color: blue;
+}
+
+li {
+    color: green;
+}
+
+h2 {
+    color: blue;
+}
+
+/* Message flashing 
+.flasho {
+    background-color: #FBB0B0;
+    padding: 10px;
+    width: 400px;
+  }
+
+.navbar {
+    border: 10px blue;
+    background-color: pink;
+    display: inline;
+    width: 100%;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink;  
+  } */
+
+  a p, i, h3 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: gray;
+    text-decoration: none;
+    transition: 0.25s;
+}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row mx-1 mx-md-0">
+  <p>
+      Please feal free to get in touch for whatever reason.
+  </p>
+</div>
+
+<div class="row mx-1 mx-md-0">
+  <form method='POST'>
+      <p>{{ template_form.hidden_tag() }}</p>
+      <p>{{ template_form.name.label }}</p>
+      <p>{{ template_form.name() }}</p>
+      {% for message in template_form.name.errors %}
+        <small class="form-text text-danger">{{ message }}</small>
+      {% endfor %}
+      <p>{{ template_form.email.label }}</p>
+      <p>{{ template_form.email() }}</p>
+      {% for message in template_form.email.errors %}
+        <small class="form-text text-danger">{{ message }}</small>
+      {% endfor %}
+      <p>{{ template_form.request.label }}</p>
+      <p>{{ template_form.request() }}</p>
+      {% for message in template_form.request.errors %}
+        <small class="form-text text-danger">{{ message }}</small>
+      {% endfor %}
+      <p>{{ template_form.submit() }}</p>
+  </form>
+</div>
+<div class="row mx-1 mx-md-0">
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success" role="alert">
+      {{message}}
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% endwith %}
+</div>
+<div class="row mx-1 mx-md-0">
+  <div>
+  <p>Alternatively you can reach me by email:</p>
+  <a href="mailto:sidneysquidney@hotmail.co.uk" class = 'link'><p class='link'>sidneysquidney@hotmail.co.uk</p></a>
+  <p>Finally, feel free to check out my github for more projects and my LinkedIn profile:</p>
+  </div>
+</div>
+<div class='row mx-1 mx-md-0'>
+  <a href="https://github.com/sidneysquidney"><i class="fa fa-github fa-2x mx-2 link"></i></a>
+  <a href="https://www.linkedin.com/in/siddhartha-lethbridge-642242242/"><i class="fa fa-linkedin fa-2x mx-2 link"></i></a>
+</div>
+
+{% endblock %}
