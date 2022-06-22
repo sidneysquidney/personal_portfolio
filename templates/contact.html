@@ -12,21 +12,21 @@
   <form method='POST'>
       <p>{{ template_form.hidden_tag() }}</p>
       <p>{{ template_form.name.label }}</p>
-      <p>{{ template_form.name() }}</p>
+      <p>{{ template_form.name(class='border border-primary') }}</p>
       {% for message in template_form.name.errors %}
         <small class="form-text text-danger">{{ message }}</small>
       {% endfor %}
       <p>{{ template_form.email.label }}</p>
-      <p>{{ template_form.email() }}</p>
+      <p>{{ template_form.email(class='border border-primary') }}</p>
       {% for message in template_form.email.errors %}
         <small class="form-text text-danger">{{ message }}</small>
       {% endfor %}
       <p>{{ template_form.request.label }}</p>
-      <p>{{ template_form.request() }}</p>
+      <p>{{ template_form.request(class='border-primary') }}</p>
       {% for message in template_form.request.errors %}
         <small class="form-text text-danger">{{ message }}</small>
       {% endfor %}
-      <p>{{ template_form.submit() }}</p>
+      <p >{{ template_form.submit(class='text-primary border border-primary') }}</p>
   </form>
 </div>
 <div class="row mx-1 mx-md-0">
