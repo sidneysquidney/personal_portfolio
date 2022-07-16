@@ -25,6 +25,8 @@ app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
 
+sids_variable = 20
+
 class ContactRequest(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(50))
