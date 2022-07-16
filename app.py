@@ -25,28 +25,14 @@ app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
 
-sids_variable = 20
-
 class ContactRequest(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     name = db.Column(db.String(50))
     email = db.Column(db.String(100), index = True)
     request = db.Column(db.String(1000))
 
-@app.route('/')
+@app.route('/', methods = ['POST', 'GET'])
 def index():
-    return render_template('index.html', title='siddhartha lethbridge')
-
-@app.route('/skills')
-def skills():
-    return render_template('skills.html', title='skills')
-
-@app.route('/projects')
-def projects():
-    return render_template('projects.html', title='projects')
-
-@app.route('/contact', methods = ['POST', 'GET'])
-def contact():
     form = ContactForm()
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -60,6 +46,6 @@ def contact():
             to_me.body = f"From {form.name.data}, Email: {form.email.data}, Message: {form.request.data}"
             mail.send(to_client)
             mail.send(to_me)
-            flash("Form entered successfully. Well done sindey!")
-            return redirect(url_for('contact', template_form = form))
-    return render_template('contact.html', template_form = form, title='contact')
+            flash("Form entered successfully")
+            return redirect(url_for('index', template_form = form, title='siddhartha lethbridge'))
+    return render_template('index.html', template_form = form, title='siddhartha lethbridge')
