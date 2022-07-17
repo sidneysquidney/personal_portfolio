@@ -1,26 +1,18 @@
 body {
-    background-color: #e3f2fd;
+    /* background-color: #e3f2fd; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-#sids-bg {
+/* #sids-bg {
     background-color: #e3f2fd;
-}
+} was on body element */
 
-.title-font {
-    font-family: 'Stick No Bills', sans-serif;
-    /* color: blue; */
-}
-
-/* a p, i, h3 {
-    color: black;
-}
-
+/* */
 a {
     text-decoration: none;
-} */
+}
 
 .project {
     color: black;
@@ -36,4 +28,45 @@ a {
 .link:hover {
     text-decoration: none;
     transition: 0.25s;
+} 
+
+/* return to top slider */
+
+.return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+html {
+    scroll-behavior:smooth
+}
+
+/* get rid of title-fornt, sids-bg */
+
+/* fonts */
+
+h1, h2, h3, nav li {
+    font-family: Montserrat, sans-serif
+}
+
+p {
+    font-family: Poppins, sans-serif
+}
+
+/* backgrounds */
+
+.background-1 {
+    background-color: #2b2b2b;
+}
+
+.background-2 {
+    background-color: #333;
 }
