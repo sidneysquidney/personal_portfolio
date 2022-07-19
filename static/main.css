@@ -38,6 +38,19 @@ a {
     right: 20px;
     z-index: 3;
     animation: fadeIn 2s;
+    color: #505050 !important;
+    background-color: #dddddd !important;
+    border:1px solid #dddddd !important;
+    transition: 0.5s !important;
+}
+
+.return-to-top:hover {
+    background-color: black !important;
+    color: white !important;
+    /* transition: all 0.5s ease-in-out; */
+    border:1px solid black !important;
+
+    
 }
 
 @keyframes fadeIn {
@@ -53,20 +66,181 @@ html {
 
 /* fonts */
 
-h1, h2, h3, nav li {
-    font-family: Montserrat, sans-serif
+h1, h2, h5, h3, button, h4 {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 900 !important;
 }
 
-p {
-    font-family: Poppins, sans-serif
+#about h3 {
+    /* font-family: "Montserratsemibold", sans-serif !important; */
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+h5, h4 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+h1, h2, .page-title, h3, h4 {
+    color: white;
+}
+
+h2 {
+    font-weight: 900 !important;
+}
+
+nav li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#home p, #about p {
+    font-family: "Poppins", sans-serif !important;
+    color: #e1e1e1;
+    /* color: red; */
+    font-weight: 300 !important;
+    font-size: 16px;
+}
+
+#about i {
+    color: #e1e1e1;
+}
+
+#skills p {
+    margin-bottom: 0px;
 }
 
 /* backgrounds */
 
 .background-1 {
-    background-color: #2b2b2b;
+    background-color: #202020;
 }
 
 .background-2 {
-    background-color: #333;
+    background-color: #2b2b2b;
+}
+
+/* navbar */
+
+/* .background-1 p {
+    color: white
+} */
+
+nav li a {
+    color: #c5c5c5;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+nav li a:focus {
+    color: #5f5f5f !important;
+}
+
+/* nav li a:hover {
+    transition: all 0.5s ease-in-out;
+} */
+
+nav button:focus {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #5f5f5f !important;
+}
+
+/* home page */
+
+#home button, #about button {
+    background-color: #dddddd;
+    color: #505050;
+    font-size: 14px;
+    transition: 0.5s;
+    padding: 13px 30px;
+}
+
+#home button:hover, #about button:hover {
+    background-color: black;
+    color: white;
+}
+
+#about button {
+    margin-top: 30px;
+    padding: 13px 30px;
+}
+
+#home button {
+    margin-top: 40px;
+    padding: 13px 50px;
+}
+
+#home img {
+    height: 300px;
+}
+
+#home h5 {
+    margin-bottom: 0px;
+}
+
+#home h1 {
+    margin-bottom: 30px;
+}
+
+/* containers */
+
+.title-box {
+    margin-bottom: 30px;
+}
+
+.page-title {
+    margin-bottom: 20px;
+}
+
+.containers {
+    padding: 100px 0px;
+}
+
+.line-one, .line-two {
+    background-color: #a1a1a1;
+    /* color:RED; */
+    /* background-color: green; */
+    height: 2px
+}
+
+.line-one {
+    width: 44px;
+    margin-bottom: 3px;
+}
+
+.line-two {
+    width: 77px;
+}
+
+.line-three {
+    width: 2px;
+    height: 20px;
+    background-color: #a1a1a1;
+}
+
+.line-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 3px; */
+}
+
+/* about page */
+
+#about ul {
+    list-style-type: none;
+    justify-content: center;
+    padding: 0px;
+}
+
+#about li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 900;
+    margin-bottom: 10px;
 }
