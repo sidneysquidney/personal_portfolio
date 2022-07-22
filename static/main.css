@@ -5,31 +5,6 @@ body {
     box-sizing: border-box;
 }
 
-/* #sids-bg {
-    background-color: #e3f2fd;
-} was on body element */
-
-/* */
-a {
-    text-decoration: none;
-}
-
-.project {
-    color: black;
-    text-decoration: none;
-}
-
-.project:hover {
-    color: gray;
-    text-decoration: none;
-    transition: 0.25s;
-}
-
-.link:hover {
-    text-decoration: none;
-    transition: 0.25s;
-} 
-
 /* return to top slider */
 
 .return-to-top {
@@ -82,7 +57,7 @@ h5, h4 {
     font-weight: 700 !important;
 }
 
-h1, h2, .page-title, h3, h4 {
+h1, h2, .page-title, h3, h4, #education h4, #education h3 {
     color: white;
 }
 
@@ -96,7 +71,7 @@ nav li {
     font-weight: 900;
 }
 
-#home p, #about p {
+#home p, #about p, #education p {
     font-family: "Poppins", sans-serif !important;
     color: #e1e1e1;
     /* color: red; */
@@ -110,6 +85,12 @@ nav li {
 
 #skills p {
     margin-bottom: 0px;
+    width: 100%;
+}
+
+#skills {
+    display: flex;
+    align-items: center
 }
 
 /* backgrounds */
@@ -243,4 +224,261 @@ nav button:focus {
     color: #f1f1f1;
     font-weight: 900;
     margin-bottom: 10px;
+}
+
+/* projects */
+
+#projects h4 {
+    color: #979494;
+    margin-bottom: 20px;
+}
+
+#projects p, #projects small, #education small {
+    color: #737373;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.project:hover {
+    text-decoration: none;
+    transition: 0.5s !important;
+}
+
+#projects .card h4, #projects .card p {
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#projects .card:hover h4, #projects .card:hover p {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+#projects .card {
+    border: none;
+    border-radius: 0px;
+}
+
+/* education */
+
+#education .ed-loc, #education .ed-des {
+    height: 200px;
+}
+
+.ed-scroll {
+    height: 180px;
+    width: 2px;
+    border: 1px dashed #737373;
+}
+
+.ball-top, .ball-bottom {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* border: 2px solid #e1e1e1; */
+    background-color: #e1e1e1;
+}
+
+/* hobbies */
+
+#hobbies .card {
+    background-color: #2b2b2b;
+    border-radius: 0;
+    height: 450px;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+
+#hobbies .card-body {
+    padding: 50px 10px 60px 10px;
+}
+
+#hobbies h6 {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 100;
+    color: #9b9b9b;
+    margin-bottom: 0px;
+}
+
+#hobbies p {
+    color: #979797;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hobbies a {
+    color: #9b9b9b;
+    transition: 0.5s;
+    font-size: 12px;
+}
+
+#hobbies a:hover {
+    color: white;
+}
+
+#hobbies i {
+    color: #9b9b9b;
+    transition: 0.5s;
+    border: 1px solid #2b2b2b;
+
+}
+
+.ho-box {
+    border-radius: 50%;
+    color: #9b9b9b;
+    border: 1px solid #9b9b9b;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+#hobbies .card:hover .ho-box, #hobbies .card:hover i {
+    background-color: black;
+    border: 1px solid black !important;
+    color: white;
+}
+
+.ho-box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.hobby-line {
+    width: 50px;
+    background-color: #dbdbdb;
+    height: 2px;
+    margin: 15px 0px;
+}
+
+.hobby-line-co {
+    display: flex;
+    justify-content: center;
+}
+
+/* contact */
+
+#contact .line-container {
+    justify-content: start;
+}
+
+#contact p {
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+#contact h4 {
+    color: #dadada;
+}
+
+#contact small {
+    color: #aaaaaa;
+}
+
+/* #contact i {
+    color: #dadada;
+    border: 1px solid #aaaaaa;
+    border-radius: 50%;
+} */
+
+
+#contact .ho-box {
+    border-radius: 50%;
+    border: 1px solid #aaaaaa;
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    /* transition: 0.5s; */
+}
+
+.ho-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#contact i {
+    color: #dadada;
+    /* transition: 0.5s; */
+    /* border: 1px solid #2b2b2b; */
+}
+
+.contact-field {
+    background-color: #2b2b2b;
+    color: #777777;
+    border-bottom: 1px solid #777777;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    width: 50%;
+    /* margin-left: 15px; */
+}
+
+.contact-message {
+    background-color: #2b2b2b;
+    color: #777777;
+    border: 1px solid #777777;
+    padding: 10px 20px;
+    margin: 50px 0px 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    width: 100%;
+    height: 150px;
+}
+
+#contact form {
+    padding: 0px 50px;
+}
+
+.contact-button {
+    background-color: #393939;
+    color: #e5e5e5;
+    border-radius: 0%;
+    border: none;
+    transition: 0.5s;
+    padding: 10px 40px;
+    margin: 30px 0px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.contact-button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+/* footer */
+
+#footer p{
+    color: #929292;
+    float: left;
+}
+
+#footer {
+    /* display: flex;
+    fustify-content: space-between; */
+    padding: 20px 0px;
+}
+
+#footer div {
+    display: flex;
+    float: right;
+}
+
+#footer h6 {
+    padding: 0px 15px;
+    color: #929292;
 }

@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="/../static/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- contact icon links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <!-- font links -->
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
@@ -54,7 +56,7 @@
         </header>
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
             <!-- back to top -->
-            <a href="#home" class="btn btn-dark btn-lg return-to-top" style='background-color: #c5c5c5;'role="button" aria-pressed="true">▲</a>
+            <a href="#home" class="btn btn-dark btn-lg return-to-top rounded-0" style='background-color: #c5c5c5;'role="button" aria-pressed="true">▲</a>
             
             <!-- home -->
             <div class="background-1 container-fluid" id="home">
@@ -85,7 +87,7 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
-                <div class="row">
+                <div class="row mx-5">
                     <div class="col">
                         <h3 style="color:white;">My Journey</h3>
                         <p>I learnt to code during lockdown, though my background is quite different. 
@@ -100,7 +102,7 @@
                             where it will take me.</p>
                         <a href="../static/siddharthas_resume.pdf" target="_blank"><button type="button" class="btn">DOWNLOAD MY RESUME</button></a>
                     </div>
-                    <div class="col justify-content-center" id="skills">
+                    <div class="col justify-content-center align-items-center" id="skills">
                         <ul>
                         <li>Python</li>
                         <li>SQL</li>
@@ -125,142 +127,287 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
+                <div class="row mx-5">
+                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                        <a href='https://pure-stream-64835.herokuapp.com/' class = 'project'>
+                            <div class="card">
+                                <img src="../static/photography_screenshot.png" alt="photography" class="card-img-top">
+                                <div class="card-body sids-card">
+                                    <h4 class="card-title font-weight-bold title-font">
+                                        LINA KATZMARCIK PHOTOGRAPHY
+                                    </h4>
+                                    <p class="card-text">
+                                        Photography Website for my wonderfully talented wife - Lina Katzmarcik.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Python, SQL, Flask, HTML, CSS</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                        <a href='https://replit.com/@sidneysquidney/Connect-Four#.replit' class = 'project'>
+                            <div class="card">
+                                <img src="../static/conn.png" alt="connect four" class="card-img-top">
+                                <div class="card-body sids-card">
+                                    <h4 class="card-title font-weight-bold title-font">
+                                        CONNECT FOUR
+                                    </h4>
+                                    <p class="card-text">
+                                        See if you can beat the hardest level on Connect four!
+                                        You can play locally by cloning the repository from 
+                                        my Github, project named: connect_nodb. Otherwise this link will enable you to play the 
+                                        terminal version.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Python, Minimax Algorithm</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                        <a href='https://replit.com/@sidneysquidney/Caesar-Substitution-and-Vinegere-Cipher#.replit' class = 'project'>
+                            <div class="card">
+                                <img src="../static/ciphertext.png" alt="ciphertext" class="card-img-top">
+                                <div class="card-body sids-card">
+                                    <h4 class="card-title font-weight-bold title-font">
+                                        CIPHERS
+                                    </h4>
+                                    <p class="card-text">
+                                        This cipher encrypter and decrypter works on the Caesar, 
+                                        Vinegere, and Substitution cipher.
+                                        Made with Python.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Python, Index of Coincidence, Frequency Attack, Hillclimb Algorithm</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
+            <div class="container-fluid containers background-2 " id="education">
+                <!-- page-title row -->
+                <div class="row title-box justify-content-center">
+                    <h2 class="page-title">EDUCATION</h2>
+                    <div class="line-container justify-content-center">
+                        <div class="line-one"></div>
+                    </div>
+                    <div class="line-container justify-content-center">
+                        <div class="line-two"></div>
+                    </div>      
+                </div>
+                <div class="row mx-5">
+                    <div class="col-3">
+                        <div class="ed-loc">
+                            <div class="row">
+                                <h3>Codecademy</h3>
+                            </div>
+                            <div class="row">
+                                <small>2020 - present</small>
+                            </div>
+                        </div>
+                        <div class="ed-loc">
+                            <div class="row">
+                                <h3>Trinity Laban</h3>
+                            </div>
+                            <div class="row">
+                                <small>September 2015 - September 2019</small>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-1 ed-scroll-container justify-content-center">
+                        <div class="row justify-content-cente">
+                            <div class="line-container">
+                                <div class="ball-top"></div>
+                            </div>
+                            <div class="line-container">
+                                <div class="ed-scroll"></div>
+                            </div>
+                            <div class="line-container">
+                                <div class="ball-bottom"></div>
+                            </div>
+                        </div>
 
-            
-            <div class=" background-1">
-                <div class="">
-                    <a href='https://pure-stream-64835.herokuapp.com/' class = 'project'>
-                        <div class="card border-primary">
-                            <img src="../static/photography_screenshot.png" alt="photography" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-title font-weight-bold ">
-                                    LINA KATZMARCIK PHOTOGRAPHY
-                                </div>
-                                <div class="card-text">
-                                    Photography Website for my wonderfully talented wife - Lina Katzmarcik. Made using Python and Flask.
-                                </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="ed-des">
+                            <div class="row">
+                                <h4>COMPUTER SCIENCE</h4>
+                                <p>Codecademy is an online learning platform for code. It gave me a strong 
+                                    foundation to explore more complex topics and projects.</p>
+                                <small>Computer Science (Coding Basics, Data Structures & Algorithms, Databases, 
+                                    Computer Architecture, Discrete Math), CSS, Flask, Numpy, Blockchain, 
+                                    Python Beginner-Advanced 
+                                </small>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="">
-                    <a href='https://replit.com/@sidneysquidney/Connect-Four#.replit' class = 'project'>
-                        <div class="card border-primary">
-                            <img src="../static/conn.png" alt="connect 4" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-title font-weight-bold ">
-                                    CONNECT FOUR
-                                </div>
-                                <div class="card-text">
-                                    I built a connect four game that uses the Minimax algorithm. Made using Python and Flask. 
-                                    You can play locally by cloning the repository from 
-                                    my Github, project named: connect_nodb. Otherwise this link will enable you to play the 
-                                    terminal version.
-                                </div>
+                        <div class="ed-des">
+                            <div class="row">
+                                <h4>CLASSICAL MUSIC PERFORMANCE</h4>
+                                <p>I studied classical trombone playing for 4 years, trying to achieve the
+                                    highest level of excellence. I played in Orchestras, Jazz bands, and
+                                    even founded the epic 'Danger Goat' band (more info in the hobbies section).
+                                </p>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="">
-                    <a href='https://replit.com/@sidneysquidney/Caesar-Substitution-and-Vinegere-Cipher#.replit' class = 'project'>
-                        <div class="card border-primary">
-                            <img src="../static/ciphertext.png" alt="cipher" class="card-img-top">
-                            <div class="card-body">
-                                <div class="card-title font-weight-bold ">
-                                    CIPHER MAKER
-                                </div>
-                                <div class="card-text">
-                                    This cipher encrypter and decrypter works on the Caesar, 
-                                    Vinegere, and Substitution cipher.
-                                    Made with Python.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- EDUCATION -->
-            
-            <div class=" background-2" id="education">
-                <h2>EDUCATION</h2>
-                <p>Computer Science, Codecademy, September 2020-present</p>
-                <p>Completed courses on Codecamedy including Computer Science, 
-                    Front-End Web-Development, and Blockchain.
-                </p>
-            </div>
-            <div class="">
-                <p>Classical Music, Trinity Laban Conservatoire, 2015-2019</p>
-                <p>Gained a bachelors degree in Classical Music Performance.
-                </p>
-            </div>
-            <!-- hobbies -->
-            
-            <div class=" background-1" id="hobbies">
-                <h2>HOBBIES</h2>
-                <div class="">
-                <p>Music</p>
-                <p>Danger Goat is a band like few others. We play a variety of Klezmer, Latin, and Peruvian
-                    classics and originals. My role is trombone player, auxilliary percussionist, and story teller. </p>
-                </div>
-                <div class="">
-                    <p>Public Speaking</p>
-                    <p>When studying in London I joined the toastmasters club. I completed the Dynamic Leadership pathway,
-                        winning a number of awards along the way. I went on to co-create infoEve, a small community
-                        diy Ted Talks, where people met up in each others houses to share their passions and ideas.
-                    </p>
-                </div>
-                <div class="">
-                    <p>Football</p>
-                    <p>Last season my team "The Excel Emu's" won every single game in both the Premier League and 
-                        Championship. We won 30 games in a , while I was accussed of doping by one of the refferee's
-                    </p>
-                </div>
-            </div>
-            <!-- contact -->
-            
-            <div class="background-2" id="contact">
-                <h2>CONTACT</h2>
-                <div class="">
-                    <p>
-                        Please feal free to get in touch.
-                    </p>
-                    <div class=" mx-1 mx-md-0">
-                        <div>
-                        <p>Alternatively you can reach me by email:</p>
-                        <a href="mailto:sglethbridge@gmail.com" class = 'link'><p class='link'>sglethbridge@gmail.com</p></a>
                         </div>
                     </div>
-                    <div class=' mx-1 mx-md-0'>
-                        <a href="https://github.com/sidneysquidney"><i class="fa fa-github fa-2x mx-2 link"></i></a>
-                        <a href="https://www.linkedin.com/in/siddhartha-lethbridge-642242242/"><i class="fa fa-linkedin fa-2x mx-2 link"></i></a>
-                    </div>
-
                 </div>
-                <div class="">
-
-                    <div class=" mx-1 mx-md-0">
+            </div>
+            <div class="container-fluid containers background-1" id="hobbies">
+                <!-- page-title row -->
+                <div class="row title-box justify-content-center">
+                    <h2 class="page-title">HOBBIES</h2>
+                    <div class="line-container justify-content-center">
+                        <div class="line-one"></div>
+                    </div>
+                    <div class="line-container justify-content-center">
+                        <div class="line-two"></div>
+                    </div>      
+                </div>
+                <div class="row mx-5">
+                    <div class="col-12 col-lg-6 col-xl-3 my-2">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-music" aria-hidden="true"></i>
+                                    </div>
+                                </div>    
+                              <h6 class="card-title text-center">DANGER GOAT</h6>
+                              <div class="hobby-line-co justify-content-center">
+                                <div class="hobby-line"></div>
+                              </div>
+                              <p class="card-text text-center">Danger Goat is a band like few others. We play a variety of Klezmer, Latin, and Peruvian
+                                classics and originals. My role is trombone player, auxilliary percussionist, and story teller. </p>
+                              <a href="https://open.spotify.com/artist/0NPiXL2ec0ixSN6j0PbGLo?si=0DziRZlWQ_6HAUDvB5MwKA" class="card-link text-center">Spotify</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-university" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                              <h6 class="card-title text-center">PUBLIC SPEAKING</h6>
+                              <div class="hobby-line-co justify-content-center">
+                                <div class="hobby-line"></div>
+                              </div>
+                              <p class="card-text text-center">When studying in London I joined the toastmasters club. I completed the Dynamic Leadership pathway,
+                                winning a number of awards along the way. I went on to co-create infoEve, a small community
+                                DIY Ted Talks, where people met up in each others houses to share their passions and ideas.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                              <h6 class="card-title text-center">FOOTBALL</h6>
+                              <div class="hobby-line-co justify-content-center">
+                                <div class="hobby-line"></div>
+                              </div>
+                              <p class="card-text text-center">Last season my team "The Excel Emu's" won every single game in both the Premier League and 
+                                Championship. We won 28 games in a row, while I was accused of doping by one of the referee's.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-tree" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                              <h6 class="card-title text-center">MEDITATION</h6>
+                              <div class="hobby-line-co justify-content-center">
+                                <div class="hobby-line"></div>
+                              </div>
+                              <p class="card-text text-center">I practice Sahaja Yoga Meditaiton. It 
+                                helps me grow and keeps me balanced.</p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid containers background-2" id="contact">
+                <!-- page-title row -->
+                <div class="row  mx-5">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h2 class="page-title">GET IN TOUCH</h2>
+                        <div class="line-container">
+                            <div class="line-one"></div>
+                        </div>
+                        <div class="line-container">
+                            <div class="line-two"></div>
+                        </div>  
+                        <p>Please feal free to get in touch.</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4>Phone</h4>
+                                <small>+44 7847 586453</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4>Email</h4>
+                                <small>sglethbridge@gmail.com</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="ho-box2">
+                                    <div class="ho-box">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4>Location</h4>
+                                <small>Bath, UK</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-8">
                         <form method='POST'>
                             <p>{{ template_form.hidden_tag() }}</p>
-                            <p>{{ template_form.name.label }}</p>
-                            <p>{{ template_form.name(class='border border-primary') }}</p>
-                            {% for message in template_form.name.errors %}
-                            <small class="form-text text-danger">{{ message }}</small>
-                            {% endfor %}
-                            <p>{{ template_form.email.label }}</p>
-                            <p>{{ template_form.email(class='border border-primary') }}</p>
-                            {% for message in template_form.email.errors %}
-                            <small class="form-text text-danger">{{ message }}</small>
-                            {% endfor %}
-                            <p>{{ template_form.request.label }}</p>
-                            <p>{{ template_form.request(class='border-primary') }}</p>
+                                <p>{{ template_form.name(class='contact-field', placeholder='Your Name') }}</p>
+                                {% for message in template_form.name.errors %}
+                                <small class="form-text text-danger">{{ message }}</small>
+                                {% endfor %}
+                                <p>{{ template_form.email(class='contact-field', placeholder='Your Email') }}</p>
+                                {% for message in template_form.email.errors %}
+                                <small class="form-text text-danger">{{ message }}</small>
+                                {% endfor %}
+                            
+                            <p>{{ template_form.request(class='contact-message', placeholder='Your Message') }}</p>
                             {% for message in template_form.request.errors %}
                             <small class="form-text text-danger">{{ message }}</small>
                             {% endfor %}
-                            <p >{{ template_form.submit(class='text-primary border border-primary') }}</p>
+                            <p >{{ template_form.submit(class='contact-button') }}</p>
+                            
                         </form>
-                    </div>
-                    <div class=" mx-1 mx-md-0">
                         {% with messages = get_flashed_messages() %}
                         {% if messages %}
                         {% for message in messages %}
@@ -272,15 +419,19 @@
                         {% endwith %}
                     </div>
                 </div>
-
             </div>
+            </div>
+            
         
             <!-- footer -->
-            <div class="justify-content-center">
-                <footer>
-                    <a href="https://github.com/sidneysquidney"><i class="fa fa-github fa-2x mx-2 link"></i></a>
-                </footer>
-            </div>
+            <footer class="background-1" id="footer">
+                <p>Copyright © 2022.</p>
+                <div>
+                    <a href="#"><h6>GITHUB</h6></a>
+                    <a href="#"><h6>LINKEDIN</h6></a>
+                    <a href="#"><h6>EMAIL</h6></a>
+                </div>
+            </footer>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
