@@ -15,6 +15,7 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:wght@300&display=swap" rel="stylesheet">
         <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
         <!-- Bootstrap CSS -->
@@ -56,7 +57,7 @@
         </header>
         <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
             <!-- back to top -->
-            <a href="#home" class="btn btn-dark btn-lg return-to-top rounded-0" style='background-color: #c5c5c5;'role="button" aria-pressed="true">▲</a>
+            <a href="#home" class="btn btn-dark btn-sm return-to-top rounded-0 justify-content-center align-items-center" style='background-color: #c5c5c5;'role="button" aria-pressed="true">▲</a>
             
             <!-- home -->
             <div class="background-1 container-fluid" id="home">
@@ -348,43 +349,43 @@
                         <div class="line-container">
                             <div class="line-two"></div>
                         </div>  
-                        <p>Please feal free to get in touch.</p>
-                        <div class="row">
-                            <div class="col-2">
+                        <p id="contact-greeting">Please feal free to get in touch.</p>
+                        <div class="row d-flex justify-content-start contact-row">
+                            <div>
                                 <div class="ho-box2">
                                     <div class="ho-box">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-10">
-                                <h4>Phone</h4>
+                            <div>
+                                <h6>Phone</h6>
                                 <small>+44 7847 586453</small>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
+                        <div class="row d-flex justify-content-start contact-row">
+                            <div >
                                 <div class="ho-box2">
                                     <div class="ho-box">
-                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-10">
-                                <h4>Email</h4>
+                            <div>
+                                <h6>Email</h6>
                                 <small>sglethbridge@gmail.com</small>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
+                        <div class="row d-flex justify-content-start contact-row">
+                            <div>
                                 <div class="ho-box2">
                                     <div class="ho-box">
-                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                        <i class="fa fa-home fa-lg" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-10">
-                                <h4>Location</h4>
+                            <div>
+                                <h6>Location</h6>
                                 <small>Bath, UK</small>
                             </div>
                         </div>
@@ -421,17 +422,45 @@
                 </div>
             </div>
             </div>
-            
+            <div class="container-fluid container-footer background-1 align-items-center" id="footer">
+                <footer class="background-1 align-self-center d-flex justify-content-between">
+                    <p class="align-self-center">Copyright © 2022 Siddhartha Lethbridge.</p>
+                    <div>
+                        <a href="#">GITHUB</a>
+                        <a href="#">LINKEDIN</a>
+                        <a href="#">EMAIL</a>
+                    </div>
+                </footer>
+                <!-- page-title row -->
+                <!-- <div class="row title-box justify-content-center">
+                    <h2 class="page-title">PROJECTS</h2>
+                    <div class="line-container justify-content-center">
+                        <div class="line-one"></div>
+                    </div>
+                    <div class="line-container justify-content-center">
+                        <div class="line-two"></div>
+                    </div>      
+                </div> -->
+
+               
+                   
+                    
+                    
+                </div>
+            </div>
         
             <!-- footer -->
-            <footer class="background-1" id="footer">
-                <p>Copyright © 2022.</p>
-                <div>
-                    <a href="#"><h6>GITHUB</h6></a>
-                    <a href="#"><h6>LINKEDIN</h6></a>
-                    <a href="#"><h6>EMAIL</h6></a>
-                </div>
-            </footer>
+            <!-- <div id="footer" class="background-1">
+                    <footer class="background-1">
+                        <p>Copyright © 2022.</p>
+                        <div>
+                            <a href="#"><h6>GITHUB</h6></a>
+                            <a href="#"><h6>LINKEDIN</h6></a>
+                            <a href="#"><h6>EMAIL</h6></a>
+                        </div>
+                    </footer>
+            </div> -->
+
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -9,7 +9,7 @@ body {
 
 .return-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     z-index: 3;
     animation: fadeIn 2s;
@@ -178,6 +178,11 @@ nav button:focus {
 
 .containers {
     padding: 100px 0px;
+}
+
+.container-footer {
+    padding: 30px 0px;
+    align-items: center;
 }
 
 .line-one, .line-two {
@@ -362,6 +367,18 @@ nav button:focus {
 
 /* contact */
 
+#contact .line-one {
+    margin-bottom: 5px;
+}
+
+#contact .line-two {
+    margin-bottom: 20px;
+}
+
+#contact-greeting {
+    margin-bottom: 30px;
+}
+
 #contact .line-container {
     justify-content: start;
 }
@@ -370,14 +387,22 @@ nav button:focus {
     color: #777777;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
+    font-weight: 100;
 }
 
-#contact h4 {
+#contact h6 {
     color: #dadada;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin-bottom: 0px;
 }
 
 #contact small {
     color: #aaaaaa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 /* #contact i {
@@ -391,19 +416,17 @@ nav button:focus {
     border-radius: 50%;
     border: 1px solid #aaaaaa;
     padding: 8px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 20px; */
-    /* transition: 0.5s; */
+    width: 45px;
+    height: 45px;
 }
 
-.ho-box2 {
-    display: flex;
-    justify-content: center;
-    align-items: center
+#contact .ho-box2 {
+    width: 45px;
+    margin-right: 12px;
+}
+
+.contact-row {
+    padding: 0px 15px;
 }
 
 #contact i {
@@ -465,11 +488,13 @@ nav button:focus {
 #footer p{
     color: #929292;
     float: left;
+    margin-bottom: 0px;
+    font-family: "Montserratlight", sans-serif;
+    font-weight: 100;
+    font-size: 13px;
 }
 
-#footer {
-    /* display: flex;
-    fustify-content: space-between; */
+.container-footer {
     padding: 20px 0px;
 }
 
@@ -478,7 +503,19 @@ nav button:focus {
     float: right;
 }
 
-#footer h6 {
+#footer a {
     padding: 0px 15px;
     color: #929292;
+    font-family: "Montserratlight", sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: white;
+
 }
