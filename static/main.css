@@ -9,7 +9,7 @@ body {
 
 .return-to-top {
     position: fixed;
-    bottom: 50px;
+    bottom: 60px;
     right: 20px;
     z-index: 3;
     animation: fadeIn 2s;
@@ -131,6 +131,10 @@ nav button:focus {
 
 /* home page */
 
+#home {
+    margin-top: 50px;
+}
+
 #home button, #about button {
     background-color: #dddddd;
     color: #505050;
@@ -154,8 +158,15 @@ nav button:focus {
     padding: 13px 50px;
 }
 
+#about button:focus {
+    outline:none;
+    box-shadow: none;
+  }
+
 #home img {
-    height: 300px;
+    height: 250px;
+    margin-top: 20px;
+    width: 250px
 }
 
 #home h5 {
@@ -165,6 +176,121 @@ nav button:focus {
 #home h1 {
     margin-bottom: 30px;
 }
+
+#img-1, #img-2 {
+    border: 1px solid #505050;
+}
+
+#img-1 {
+    width:300px;
+    height: 400px;
+}
+
+#img-2 {
+    width: 340px;
+    height: 360px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    right: 20px;
+    top: 20px;
+    flex-direction: column;
+}
+
+#img-2 h6 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.blink_me {
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+.blinky {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.left-side, .right-side {
+    border-top: 4px solid green;
+    border-bottom: 4px solid green;
+    width: 8px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.left-side {
+    border-left: 4px solid green;
+}
+
+.right-side {
+    border-right: 4px solid #44993b;
+}
+
+.typewriter h6 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #44993b; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #44993b; }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #img-2 img {
+      width: 180px;
+      height: 180px;
+    }
+
+    #img-2 h6 {
+        font-size: 14px;
+    }
+
+    #img-1 {
+        width:230px;
+        height: 330px;
+    }
+
+    #img-2 {
+        width: 270px;
+        height: 290px;
+    }
+
+    /* #home-1 {
+        height: 500px;
+    } */
+  }
+
+/* #home-1 {
+    height: 600px;
+} */
+
 
 /* containers */
 
@@ -269,6 +395,20 @@ nav button:focus {
     height: 200px;
 }
 
+@media only screen and (max-width: 992px) {
+    #education .ed-loc, #education .ed-des {
+      height: 300px;
+    }
+
+    .ed-scroll {
+        height: 280px;
+    }
+  }
+
+#education h3 {
+    word-break: break-all;
+}
+
 .ed-scroll {
     height: 180px;
     width: 2px;
@@ -288,7 +428,7 @@ nav button:focus {
 #hobbies .card {
     background-color: #2b2b2b;
     border-radius: 0;
-    height: 450px;
+    /* height: 450px; */
     padding: 0px 15px;
     margin-bottom: 30px;
 }
@@ -403,6 +543,17 @@ nav button:focus {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 300;
+    transition: 0.5s;
+}
+
+#contact small:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 /* #contact i {
@@ -445,8 +596,19 @@ nav button:focus {
     padding: 5px 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    width: 50%;
+    width: 300px;
     /* margin-left: 15px; */
+}
+
+.contact-field:focus, .contact-message:focus {
+    outline-width: 0;
+}
+
+/* Change the white to any color */
+.contact-field:-webkit-autofill{
+    -webkit-text-fill-color: #777777 ;
+    box-shadow: 0 0 0px 1000px #2b2b2b inset;
+    -webkit-box-shadow: 0 0 0px 1000px #2b2b2b inset;
 }
 
 .contact-message {
@@ -457,13 +619,25 @@ nav button:focus {
     margin: 50px 0px 0px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    width: 100%;
+    width: 550px;
     height: 150px;
 }
 
-#contact form {
+@media only screen and (max-width: 992px) {
+    .contact-message {
+      width: 350px;
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .contact-message, .contact-field {
+      width: 100%;
+    }
+  }
+
+/* #contact form {
     padding: 0px 50px;
-}
+} */
 
 .contact-button {
     background-color: #393939;
@@ -519,3 +693,9 @@ nav button:focus {
     color: white;
 
 }
+
+/* other */
+
+.anchor{
+    scroll-margin-top: -10px;
+  }

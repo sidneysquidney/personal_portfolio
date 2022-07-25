@@ -21,6 +21,8 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <title>Siddhartha Lethbridge</title>
+        <link rel="shortcut icon" type="image/jpg" href="../static/favicon.ico"/>
+
     </head>
     <body class="position-relative" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         
@@ -61,9 +63,9 @@
             
             <!-- home -->
             <div class="background-1 container-fluid" id="home">
-                <div class="row">
-                    <div class="col-md-6 col-12 d-flex align-items-center" style="height: 700px">
-                        <div class="row mx-5">
+                <div class="row mx-lg-5 mx-md-3 mx-1">
+                    <div class="col-md-6 col-12 d-flex align-items-center mt-5">
+                        <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
                             <h5 style="color: #bfbfbf; font-family: 'Montserrat',sans-serif;">HELLO, MY NAME IS</h5>
                             <h1 style="color:white;">SIDDHARTHA LETHBRIDGE</h1>
                             <p style="font-family:'Poppins', sans-serif;">I am an aspiring self-taught programmer with an interest in mathematics, 
@@ -71,13 +73,24 @@
                             <a href="#projects"><button type="button" class="btn">MY WORK</button></a>                            
                         </div>                        
                     </div>                                
-                    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
-                        <img class='img-fluid' src = "../static/sid_guitar.jpeg" alt="sids picture">
+                    <div class="col-md-6 col-12 d-flex align-items-center justify-content-center my-5">
+                        <div id="img-1">
+                            <div id="img-2">
+                                <img class='img-fluid' src = "../static/headshot.jpeg" alt="sids picture">
+                                <div class='blinky typewriter'>
+                                    <!-- <div class="left-side blink_me"></div> -->
+                                    <h6>Software Engineer</h6>
+                                    <!-- <div class="right-side blink_me"></div> -->
+                                </div>
+                                <!-- <h6 class="blink_me">Software Engineer</h6> -->
+                            </div>
+                        </div>
+                        
                     </div>                    
                 </div>
             </div>
             <!-- about -->
-            <div class="container-fluid containers background-2 " id="about">
+            <div class="container-fluid containers background-2 anchor" id="about">
                 <!-- page-title row -->
                 <div class="row title-box justify-content-center">
                     <h2 class="page-title">ABOUT ME</h2>
@@ -88,8 +101,8 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
-                <div class="row mx-5">
-                    <div class="col">
+                <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
+                    <div class="col-md-6 col-12">
                         <h3 style="color:white;">My Journey</h3>
                         <p>I learnt to code during lockdown, though my background is quite different. 
                             As a child I wanted to be a tennis player. I competed at many tournaments, 
@@ -103,7 +116,7 @@
                             where it will take me.</p>
                         <a href="../static/siddharthas_resume.pdf" target="_blank"><button type="button" class="btn">DOWNLOAD MY RESUME</button></a>
                     </div>
-                    <div class="col justify-content-center align-items-center" id="skills">
+                    <div class="col-md-6 col-12 justify-content-center align-items-center mt-md-0 mt-5" id="skills">
                         <ul>
                         <li>Python</li>
                         <li>SQL</li>
@@ -117,7 +130,7 @@
             </div>
 
             <!-- projects -->
-            <div class="container-fluid containers background-1 " id="projects">
+            <div class="container-fluid containers background-1 anchor" id="projects">
                 <!-- page-title row -->
                 <div class="row title-box justify-content-center">
                     <h2 class="page-title">PROJECTS</h2>
@@ -128,8 +141,8 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
-                <div class="row mx-5">
-                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 my-2">
                         <a href='https://pure-stream-64835.herokuapp.com/' class = 'project'>
                             <div class="card">
                                 <img src="../static/photography_screenshot.png" alt="photography" class="card-img-top">
@@ -145,7 +158,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 my-2">
                         <a href='https://replit.com/@sidneysquidney/Connect-Four#.replit' class = 'project'>
                             <div class="card">
                                 <img src="../static/conn.png" alt="connect four" class="card-img-top">
@@ -164,7 +177,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 my-2">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 my-2">
                         <a href='https://replit.com/@sidneysquidney/Caesar-Substitution-and-Vinegere-Cipher#.replit' class = 'project'>
                             <div class="card">
                                 <img src="../static/ciphertext.png" alt="ciphertext" class="card-img-top">
@@ -185,7 +198,8 @@
                     
                 </div>
             </div>
-            <div class="container-fluid containers background-2 " id="education">
+            <!-- education -->
+            <div class="container-fluid containers background-2 anchor" id="education">
                 <!-- page-title row -->
                 <div class="row title-box justify-content-center">
                     <h2 class="page-title">EDUCATION</h2>
@@ -196,53 +210,29 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
-                <div class="row mx-5">
-                    <div class="col-3">
-                        <div class="ed-loc">
-                            <div class="row">
+                <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
+                    <div class="col">
+                        <div class="row mb-5">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
                                 <h3>Codecademy</h3>
-                            </div>
-                            <div class="row">
                                 <small>2020 - present</small>
                             </div>
-                        </div>
-                        <div class="ed-loc">
-                            <div class="row">
-                                <h3>Trinity Laban</h3>
-                            </div>
-                            <div class="row">
-                                <small>September 2015 - September 2019</small>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-1 ed-scroll-container justify-content-center">
-                        <div class="row justify-content-cente">
-                            <div class="line-container">
-                                <div class="ball-top"></div>
-                            </div>
-                            <div class="line-container">
-                                <div class="ed-scroll"></div>
-                            </div>
-                            <div class="line-container">
-                                <div class="ball-bottom"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-8">
-                        <div class="ed-des">
-                            <div class="row">
+                            <div class="col-12 col-md-8">
                                 <h4>COMPUTER SCIENCE</h4>
                                 <p>Codecademy is an online learning platform for code. It gave me a strong 
                                     foundation to explore more complex topics and projects.</p>
                                 <small>Computer Science (Coding Basics, Data Structures & Algorithms, Databases, 
                                     Computer Architecture, Discrete Math), CSS, Flask, Numpy, Blockchain, 
-                                    Python Beginner-Advanced 
+                                    Python Beginner-Advanced.
                                 </small>
                             </div>
                         </div>
-                        <div class="ed-des">
-                            <div class="row">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <h3>Trinity Laban</h3>
+                                <small>September 2015 - September 2019</small>
+                            </div>
+                            <div class="col-12 col-md-8">
                                 <h4>CLASSICAL MUSIC PERFORMANCE</h4>
                                 <p>I studied classical trombone playing for 4 years, trying to achieve the
                                     highest level of excellence. I played in Orchestras, Jazz bands, and
@@ -253,7 +243,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid containers background-1" id="hobbies">
+            <!-- hobbies -->
+            <div class="container-fluid containers background-1 anchor" id="hobbies">
                 <!-- page-title row -->
                 <div class="row title-box justify-content-center">
                     <h2 class="page-title">HOBBIES</h2>
@@ -264,8 +255,8 @@
                         <div class="line-two"></div>
                     </div>      
                 </div>
-                <div class="row mx-5">
-                    <div class="col-12 col-lg-6 col-xl-3 my-2">
+                <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 my-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <div class="ho-box2">
@@ -277,13 +268,12 @@
                               <div class="hobby-line-co justify-content-center">
                                 <div class="hobby-line"></div>
                               </div>
-                              <p class="card-text text-center">Danger Goat is a band like few others. We play a variety of Klezmer, Latin, and Peruvian
-                                classics and originals. My role is trombone player, auxilliary percussionist, and story teller. </p>
-                              <a href="https://open.spotify.com/artist/0NPiXL2ec0ixSN6j0PbGLo?si=0DziRZlWQ_6HAUDvB5MwKA" class="card-link text-center">Spotify</a>
+                              <p class="card-text text-center">Danger goat is a Klezmer, Peruvian, and Latin band, playing classics and originals. My role is trombone player, auxiliary percussionist, and 
+                                story teller</p>
                             </div>
                           </div>
                     </div>
-                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 my-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <div class="ho-box2">
@@ -295,13 +285,11 @@
                               <div class="hobby-line-co justify-content-center">
                                 <div class="hobby-line"></div>
                               </div>
-                              <p class="card-text text-center">When studying in London I joined the toastmasters club. I completed the Dynamic Leadership pathway,
-                                winning a number of awards along the way. I went on to co-create infoEve, a small community
-                                DIY Ted Talks, where people met up in each others houses to share their passions and ideas.</p>
+                              <p class="card-text text-center">While studying, I joined toastmasters, where I learnt the art of Public Speaking. I went on to co-create infoEve, a small community-based DIY Ted Talks.</p>
                             </div>
                           </div>
                     </div>
-                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 my-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <div class="ho-box2">
@@ -313,12 +301,12 @@
                               <div class="hobby-line-co justify-content-center">
                                 <div class="hobby-line"></div>
                               </div>
-                              <p class="card-text text-center">Last season my team "The Excel Emu's" won every single game in both the Premier League and 
-                                Championship. We won 28 games in a row, while I was accused of doping by one of the referee's.</p>
+                              <p class="card-text text-center">Last season my team "The Excel Emu's" won the league, while winning twenty eight games in a row. I was accused of doping by one of the referee’s.
+                            </p>
                             </div>
                           </div>
                     </div>
-                    <div class="col-12  col-lg-6 col-xl-3 my-2">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 mt-2">
                         <div class="card text-center">
                             <div class="card-body">
                                 <div class="ho-box2">
@@ -330,18 +318,19 @@
                               <div class="hobby-line-co justify-content-center">
                                 <div class="hobby-line"></div>
                               </div>
-                              <p class="card-text text-center">I practice Sahaja Yoga Meditaiton. It 
-                                helps me grow and keeps me balanced.</p>
+                              <p class="card-text text-center">Since I was a child I have practiced Sahaja Yoga meditation. It has become an integral part of my life, helping to keep me balanced and to grow.
+                            </p>
                               
                             </div>
                           </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid containers background-2" id="contact">
+            <!-- contact -->
+            <div class="container-fluid containers background-2 anchor" id="contact">
                 <!-- page-title row -->
-                <div class="row  mx-5">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="row mx-lg-5 mx-md-3 mx-sm-1 mx-xs-0">
+                    <div class="col-12 col-lg-4 col-md-5">
                         <h2 class="page-title">GET IN TOUCH</h2>
                         <div class="line-container">
                             <div class="line-one"></div>
@@ -360,7 +349,7 @@
                             </div>
                             <div>
                                 <h6>Phone</h6>
-                                <small>+44 7847 586453</small>
+                                <a href="tel:+44-7847-586453"><small>+44 7847 586453</small></a>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-start contact-row">
@@ -373,7 +362,7 @@
                             </div>
                             <div>
                                 <h6>Email</h6>
-                                <small>sglethbridge@gmail.com</small>
+                                <a href="mailto:sglethbridge@gmail.com"><small>sglethbridge@gmail.com</small></a>
                             </div>
                         </div>
                         <div class="row d-flex justify-content-start contact-row">
@@ -386,11 +375,11 @@
                             </div>
                             <div>
                                 <h6>Location</h6>
-                                <small>Bath, UK</small>
+                                <a href="https://goo.gl/maps/xV1TFo7ogW8iEMH66"><small>Bath, UK</small></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="col-12 col-lg-8 col-md-7">
                         <form method='POST'>
                             <p>{{ template_form.hidden_tag() }}</p>
                                 <p>{{ template_form.name(class='contact-field', placeholder='Your Name') }}</p>
@@ -412,9 +401,10 @@
                         {% with messages = get_flashed_messages() %}
                         {% if messages %}
                         {% for message in messages %}
-                        <div class="alert alert-success" role="alert">
-                            {{message}}
-                        </div>
+                        <!-- <div class="alert alert-success" role="alert"> -->
+                            <p style="color: green;">{{message}}</p>
+                            
+                        <!-- </div> -->
                         {% endfor %}
                         {% endif %}
                         {% endwith %}
@@ -426,9 +416,9 @@
                 <footer class="background-1 align-self-center d-flex justify-content-between">
                     <p class="align-self-center">Copyright © 2022 Siddhartha Lethbridge.</p>
                     <div>
-                        <a href="#">GITHUB</a>
-                        <a href="#">LINKEDIN</a>
-                        <a href="#">EMAIL</a>
+                        <a href="https://github.com/sidneysquidney">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/siddharthalethbridge/">LINKEDIN</a>
+                        <a href="mailto:sglethbridge@gmail.com">EMAIL</a>
                     </div>
                 </footer>
                 <!-- page-title row -->

@@ -47,5 +47,8 @@ def index():
             mail.send(to_client)
             mail.send(to_me)
             flash("Form entered successfully")
-            return redirect(url_for('index', template_form = form, title='siddhartha lethbridge'))
+            return redirect('/#contact')
+        # else:
+        #     flash('else')
+        #     return redirect('/#contact')
     return render_template('index.html', template_form = form, title='siddhartha lethbridge')
