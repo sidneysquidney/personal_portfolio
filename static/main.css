@@ -57,7 +57,7 @@ h5, h4 {
     font-weight: 700 !important;
 }
 
-h1, h2, .page-title, h3, h4, #education h4, #education h3 {
+h1, h2, .page-title, h3, h4, #education h4, #education h3, #work h4, #work h3 {
     color: white;
 }
 
@@ -71,12 +71,13 @@ nav li {
     font-weight: 900;
 }
 
-#home p, #about p, #education p {
+#home p, #about p, #education p, #work li, #work p {
     font-family: "Poppins", sans-serif !important;
     color: #e1e1e1;
     /* color: red; */
     font-weight: 300 !important;
     font-size: 16px;
+    list-style-type: none;
 }
 
 #about i {
@@ -311,6 +312,11 @@ nav button:focus {
     align-items: center;
 }
 
+.container-inbetween {
+    padding: 50px 0px;
+    align-items: center;
+}
+
 .line-one, .line-two {
     background-color: #a1a1a1;
     /* color:RED; */
@@ -364,7 +370,7 @@ nav button:focus {
     margin-bottom: 20px;
 }
 
-#projects p, #projects small, #education small {
+#projects p, #projects small, #education small, #work small {
     color: #737373;
     font-family: "Poppins", sans-serif !important;
 }
